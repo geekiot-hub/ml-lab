@@ -1,5 +1,6 @@
 # Images
 *.svg
+*.png
 
 # ---> Python
 # Byte-compiled / optimized / DLL files
