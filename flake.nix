@@ -74,6 +74,7 @@
             venv
             python
             pkgs.uv
+            # pkgs.portaudio
           ];
         };
       }
