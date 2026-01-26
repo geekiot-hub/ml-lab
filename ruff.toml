@@ -1,0 +1,24 @@
+exclude = [
+  ".git/",
+  ".ruff_cache/",
+  ".venv/",
+  "__pycache__/",
+  "venv/",
+  "vscode/",
+]
+indent-width = 4
+line-length = 79
+target-version = "py313"
+
+[lint]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+fixable = [ "ALL" ]
+ignore = [ "T201" ]
+select = [ "C90", "E", "F", "I", "N", "S", "T" ]
+unfixable = [  ]
+
+[format]
+indent-style = "space"
+line-ending = "auto"
+quote-style = "double"
+skip-magic-trailing-comma = false

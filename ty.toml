@@ -1,0 +1,9 @@
+[analysis]
+respect-type-ignore-comments = true
+
+[environment]
+extra-paths = [  ]
+python-version = "3.13"
+
+[terminal]
+output-format = "full"
