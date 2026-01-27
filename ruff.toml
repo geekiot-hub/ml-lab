@@ -13,7 +13,7 @@ target-version = "py313"
 [lint]
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 fixable = [ "ALL" ]
-ignore = [ "T201" ]
+ignore = [ "T201", "N803" ]
 select = [ "C90", "E", "F", "I", "N", "S", "T" ]
 unfixable = [  ]
 
