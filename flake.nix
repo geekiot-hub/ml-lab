@@ -59,6 +59,14 @@
         );
 
         venv = pythonSet.mkVirtualEnv "${venvName}" workspace.deps.default;
+
+        myTex = pkgs.texlive.combine {
+          inherit (pkgs.texlive)
+            scheme-medium
+            type1cm
+            cm-super
+            dvipng;
+        };
       in
       {
         devShells.default = pkgs.mkShell {
@@ -68,6 +76,7 @@
             pkgs.uv
             pkgs.ty
             pkgs.ruff
+            myTex
           ];
         };
       }
