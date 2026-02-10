@@ -130,7 +130,13 @@ def _(X_std, plot_decision_regions, plt, svm, y):
     plt.ylabel("Ширина лепестка [standard]")
     plt.tight_layout()
     plt.legend(loc="upper left")
-    plt.gca()
+    plt.savefig("./src/notebooks/marimo/images/test_image.png")
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.image(src="./src/notebooks/marimo/images/test_image.png")
     return
 
 
