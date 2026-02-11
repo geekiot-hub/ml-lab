@@ -65,7 +65,8 @@
             scheme-medium
             type1cm
             cm-super
-            dvipng;
+            dvipng
+            ;
         };
       in
       {
@@ -73,10 +74,14 @@
           packages = [
             venv
             python
+
             pkgs.uv
             pkgs.ty
             pkgs.ruff
+
             myTex
+
+            pkgs.git-filter-repo
           ];
         };
       }
