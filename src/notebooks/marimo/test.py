@@ -36,7 +36,7 @@ def _(StandardScaler, X):
     return (X_std,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md("""
     # Try to train model. $\Sigma{x_i}$
@@ -115,7 +115,7 @@ def _(mo):
     return (gamma_value_slider,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(gamma_value_slider, mo):
     mo.md(f"""
     Gamma value for SVM: {gamma_value_slider}
@@ -130,13 +130,7 @@ def _(X_std, plot_decision_regions, plt, svm, y):
     plt.ylabel("Ширина лепестка [standard]")
     plt.tight_layout()
     plt.legend(loc="upper left")
-    plt.savefig("./src/notebooks/marimo/images/test_image.png")
-    return
-
-
-@app.cell(hide_code=True)
-def _(mo):
-    mo.image(src="./src/notebooks/marimo/images/test_image.png")
+    plt.show()
     return
 
 
